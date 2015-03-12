@@ -1,0 +1,399 @@
+@import "vars"
+@import "../bower_components/reset-css/reset.css"
+@import "bootstrap.min.css"
+@import "buttons.css"
+
+// ********************     reset     *********************
+a
+  color: inherit
+  &:hover
+    color: inherit
+    text-decoration: none
+ul
+  margin: 0
+// ********************    general    *********************
+.clr
+  clear: both
+body
+  font-family: 'Roboto', sans-serif !important
+.goto-block-down, .goto-block-up
+  text-align: center
+  display: block
+  position: absolute
+  top: 100%
+  margin-top: -35px
+  width: 100%
+  z-index: 1
+  height: 35px
+  overflow: hidden 
+  a.goto
+    width: 70px
+    height: 70px
+    -webkit-border-radius: 50% 
+    border-radius: 50%
+    background-color: #fff
+    opacity: 0.2
+    display: inline-block
+    -webkit-transition: all 0.4s 
+    -moz-transition: all 0.4s 
+    -ms-transition: all 0.4s 
+    -o-transition: all 0.4s 
+    transition: all 0.4s 
+    &:hover
+      opacity: 0.4
+    span
+      line-height: 40px
+.goto-block-up
+  top: 0
+  margin-top: 0
+  a.goto
+    background-color: $dark
+    position: relative
+    top: -35px
+    span img
+      position: relative
+      top: 30px
+.contact .goto-block-up a.goto
+  background-color: #FFF 
+    
+
+// ********************   end reset   *********************
+// ********************  for script   *********************
+.hide
+  display: none
+.show
+  display: block
+// ******************  for script end  ********************
+// ********************   top block   *********************
+.top-block
+  overflow: hidden
+  min-height: 460px
+  position: relative
+  width: 100%
+  height: 100vh
+  background-color: $dark
+  display: block
+  .main-logo-place
+    position: absolute
+    width: 100%
+    height: 100%
+    display: table
+    z-index: 1
+    .logo-place
+      display: table-cell
+      vertical-align: middle
+      text-align: center
+      .logo
+        display: inline-block
+        width: 600px
+        height: 330px
+        background-image: url(../images/logo.png)
+        margin-left: -70px 
+  .menu-2
+    width: 270px
+    height: 100%
+    position: absolute
+    top: 0
+    right: -270px
+    -webkit-transition: all 0.3s 
+    -moz-transition: all 0.3s 
+    -ms-transition: all 0.3s 
+    -o-transition: all 0.3s 
+    transition: all 0.3s 
+    background-color: $lightThanDark
+    z-index: 2
+    .soc-block
+      background-color: rgba(255, 255, 255, 0.03)
+      width: 100%
+      height: 70px
+      display: block
+      text-align: center
+      padding: 10px
+      .sep
+        display: inline-block
+        height: 100%
+        width: 4px  
+      .vk, .twitter
+        width: 50px
+        height: 50px
+        display: inline-block
+        opacity: 0.1
+        transform: scale(0.5)
+        -webkit-transition: all 0.1ms
+        -moz-transition: all 0.1ms
+        -ms-transition: all 0.1ms
+        -o-transition: all 0.1ms
+        transition: all 0.1ms
+        &:hover
+          opacity: 0.4
+      .vk
+        background-image: url(../images/soc/vk.png)
+      .twitter
+        background-image: url(../images/soc/tw.png) 
+    .menu-header
+      height: 70px
+      position: relative
+      width: 100%
+      background-color: $white
+      .menu-logo
+        background-image: url(../images/menu-logo.png)
+        width: 36px
+        height: 39px
+        margin: 0 auto
+        position: relative
+        top: 15px
+      .close-btn
+        position: absolute
+        cursor: pointer
+        left: 26px
+        top: 26px
+        background-image: url(../images/menu_close.png)
+        width: 18px
+        height: 18px
+    // ul style begin
+    ul li 
+      a
+        display: block
+        width: 100%
+        height: 70px
+        font-size: 14px
+        position: relative
+        box-sizing: border-box
+        -moz-box-sizing: border-box
+        background-color: none
+        line-height: 20px
+        padding-top: 25px
+        color: $white
+        span > span span
+          padding: 25px
+    // ul style end 
+  .menu-1
+    position: absolute
+    top: 0
+    right: 0
+    width: 70px
+    height: 100%
+    z-index: 2
+    .open-menu
+      width: 70px
+      height: 70px
+      cursor: pointer
+    .buttons
+      position: absolute
+      top: 70px
+      bottom: 0
+      right: 0
+      left: 0
+      a.button
+        display: block
+        cursor: pointer
+        width: 70px
+        height: 50%
+        background-color: $lightThanDark
+        color: $darkerThanWhite
+        font-size: 15px
+        position: relative
+        //******animation and hover effect begin *****
+        -webkit-transition: all 0.4s 
+        -moz-transition: all 0.4s 
+        -ms-transition: all 0.4s 
+        -o-transition: all 0.4s 
+        transition: all 0.4s 
+        &:first-child:after
+          position: absolute
+          content: ''
+          width: 40px
+          height: 2px
+          border-bottom: 1px solid $lighterForBorder
+          bottom: 0px
+          left: 15px
+        &:first-child:hover:after
+          display: none
+        &:hover
+          background-color: $darkerThanWhite
+          color: $lightThanDark
+        //******animation and hover effect end *****
+        .center-align
+          width: 100%
+          height: 100%
+          display: table
+          text-align: center
+          .center-align1
+            display: table-cell
+            vertical-align: middle
+            .vertical-align
+              width: 10px
+              word-wrap: break-word
+              display: inline-block
+
+// ***************  adaptive top  ****************
+// in
+@media screen and (max-width: $less1000) and (min-width: $less500 + 1)
+  .buttons
+    display: none
+    -webkit-transition: all 0.3s 
+    -moz-transition: all 0.3s 
+    -ms-transition: all 0.3s 
+    -o-transition: all 0.3s 
+    transition: all 0.3s
+  .logo
+    -webkit-transform: scale(0.8)
+    -moz-transform: scale(0.8)
+    -ms-transform: scale(0.8)
+    -o-transform: scale(0.8)
+    transform: scale(0.8)
+    -webkit-transition: all 0.3s 
+    -moz-transition: all 0.3s 
+    -ms-transition: all 0.3s 
+    -o-transition: all 0.3s 
+    transition: all 0.3s
+@media screen and (max-width: $less500)
+  .dev-block, .des-block
+    p
+      font-size: 16px
+    h2
+      font-size: 36px
+      font-weight: bold
+  .goto-block-down, .goto-block-up
+    display: none
+  .buttons
+    display: none
+  .logo
+    -webkit-transform: scale(0.5)
+    -moz-transform: scale(0.5)
+    -ms-transform: scale(0.5)
+    -o-transform: scale(0.5)
+    transform: scale(0.5)
+    -webkit-transition: all 0.3s 
+    -moz-transition: all 0.3s 
+    -ms-transition: all 0.3s 
+    -o-transition: all 0.3s 
+    transition: all 0.3s
+// outs
+@media screen and (min-width: $less1000)
+  .dev-block, .des-block
+    p
+      font-size: 20px
+    h2
+      font-size: 60px
+      font-weight: bold
+  .buttons
+    display: block
+    -webkit-transition: all 0.3s 
+    -moz-transition: all 0.3s 
+    -ms-transition: all 0.3s 
+    -o-transition: all 0.3s 
+    transition: all 0.3s
+  .logo
+    -webkit-transform: scale(1)
+    -moz-transform: scale(1)
+    -ms-transform: scale(1)
+    -o-transform: scale(1)
+    transform: scale(1)
+    -webkit-transition: all 0.3s 
+    -moz-transition: all 0.3s 
+    -ms-transition: all 0.3s 
+    -o-transition: all 0.3s 
+    transition: all 0.3s
+  
+// ************** adaptive top end ***************
+// **************  top block end   ***************
+// **************   blocks begin   ***************
+.dev-block, .des-block, .portfolio, .contact, .other-block
+  height: 100vh
+  display: block
+  width: 100%
+  overflow: hidden
+  position: relative
+  .in-global-block
+    display: table
+    position: absolute
+    width: 100%
+    height: 100%
+    .in
+      display: table-cell
+      vertical-align: middle
+.dev-block
+  .col-lg-6:first-child
+    text-align: center
+.des-block
+  .col-lg-6:last-child
+    text-align: center
+// **************  contact begin   ***************
+.contact, .other-block
+  background-color: $contact 
+  color: #fff
+  .centered
+    display: block
+    width: 100%
+    text-align: center
+    margin-bottom: 30px
+    .text
+      padding: 20px 30px
+      border: 2px solid #fff
+      font-size: 26px
+      font-weight: bold
+      display: inline-block
+  .block
+    display: block
+    width: 100%
+    text-align: center
+    .in-block
+      display: inline-block
+      li
+        @media screen and (max-width: $less1000+15)
+          float: none
+        @media screen and (min-width: $less1000+16)
+          float: left
+        font-size: 28px
+        margin-right: 30px
+      li:first-child
+        margin-right: none 
+      span
+        float: left
+        line-height: 100px
+        vertical-align: middle
+      span.skype-img, span.email-img, span.phone-img
+        width: 100px
+        height: 100px
+        display: inline-block
+        float: left
+        -webkit-transform: scale(0.6)
+        -moz-transform: scale(0.6)
+        -ms-transform: scale(0.6)
+        -o-transform: scale(0.6)
+        transform: scale(0.6)
+      span.skype-img
+        background-image: url(../images/contact/Skype.png)
+      span.email-img
+        background-image: url(../images/contact/mail.png)
+      span.phone-img
+        background-image: url(../images/contact/phone.png) 
+// ***************  other begin   ****************
+.other-block .block .in-block
+  font-size: 24px 
+  a 
+    background-color: #fff
+    color: $contact
+    padding: 4px
+    -webkit-transition: all 0.4s 
+    -moz-transition: all 0.4s 
+    -ms-transition: all 0.4s 
+    -o-transition: all 0.4s 
+    transition: all 0.4s
+    &:hover
+      color: #fff
+      background-color: transparent 
+.other-block .in
+  .bottom
+    position: absolute
+    bottom: 50px
+    .text
+      -webkit-transition: all 0.4s 
+      -moz-transition: all 0.4s 
+      -ms-transition: all 0.4s 
+      -o-transition: all 0.4s 
+      transition: all 0.4s
+      &:hover
+        color: $contact
+        background-color: #FFF 
