@@ -879,6 +879,17 @@ a:hover {
     display: none;
   }
 }
+@media screen and (max-width: 880px) {
+  .arrow-line .wrap {
+    font-size: 12px !important;
+  }
+  .arrow-line .wrap .title:after {
+    border-width: 21px !important;
+  }
+  .arrow-line .first-part, .arrow-line .second-part {
+    height: 42px !important;
+  }
+}
 @media screen and (max-width: 830px) {
   .org-line .case img {
     width: 250px;
@@ -898,16 +909,6 @@ a:hover {
   }
   .comment-line .case .text {
     text-align: left;
-  }
-
-  .arrow-line .wrap {
-    font-size: 12px !important;
-  }
-  .arrow-line .wrap .title:after {
-    border-width: 21px !important;
-  }
-  .arrow-line .first-part, .arrow-line .second-part {
-    height: 42px !important;
   }
 }
 @media screen and (max-width: 720px) {

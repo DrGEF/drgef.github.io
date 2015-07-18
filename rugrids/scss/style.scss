@@ -933,6 +933,22 @@ a {
     }
 }
 
+@media screen and (max-width: $s + 160px) {
+	.arrow-line {
+        .wrap {
+            font-size: 12px !important;
+            .title:after {
+                border-width: 21px !important;
+            }
+        }
+        .first-part, .second-part {
+            height: 42px !important;
+        }
+    }
+}
+
+
+
 // 800
 @media screen and (max-width: $s + 110px) {
     .org-line .case img {
@@ -953,17 +969,6 @@ a {
             .text {
                 text-align: left;
             }
-        }
-    }
-    .arrow-line {
-        .wrap {
-            font-size: 12px !important;
-            .title:after {
-                border-width: 21px !important;
-            }
-        }
-        .first-part, .second-part {
-            height: 42px !important;
         }
     }
 }
