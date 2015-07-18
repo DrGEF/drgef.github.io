@@ -794,6 +794,17 @@ a {
     }
     .arrow-line {
         .wrap {
+            font-size: 20px !important;
+            .title:after {
+                border-width: 20px !important;
+            }
+        }
+        .first-part, .second-part {
+            height: 50px !important;
+        }
+    }
+    .arrow-line {
+        .wrap {
             .link {
                 margin-left: 40px;
             }
