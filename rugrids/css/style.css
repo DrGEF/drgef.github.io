@@ -38,6 +38,7 @@
 body {
   padding: 0;
   margin: 0;
+  min-width: 445px;
 }
 
 a {
@@ -898,8 +899,7 @@ a:hover {
   .comment-line .case .text {
     text-align: left;
   }
-}
-@media screen and (max-width: 720px) {
+
   .arrow-line .wrap {
     font-size: 12px !important;
   }
@@ -909,7 +909,8 @@ a:hover {
   .arrow-line .first-part, .arrow-line .second-part {
     height: 42px !important;
   }
-
+}
+@media screen and (max-width: 720px) {
   .org-line .case img {
     width: 150px;
   }
@@ -918,7 +919,7 @@ a:hover {
     width: 150px;
   }
 }
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 600px) {
   .arrow-line .wrap > .title {
     font-size: 10px !important;
   }
@@ -928,6 +929,22 @@ a:hover {
   }
   .arrow-line .wrap > .title:after {
     border-width: 20px !important;
+  }
+  .arrow-line .first-part, .arrow-line .second-part {
+    height: 40px !important;
+  }
+}
+@media screen and (max-width: 550px) {
+  .arrow-line .wrap > .title {
+    font-size: 10px !important;
+    word-spacing: 0px;
+  }
+  .arrow-line .wrap > .link {
+    padding: 14px 0;
+    margin-left: 12px;
+  }
+  .arrow-line .wrap > .title:after {
+    border-width: 0 !important;
   }
   .arrow-line .first-part, .arrow-line .second-part {
     height: 40px !important;

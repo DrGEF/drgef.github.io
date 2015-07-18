@@ -6,6 +6,7 @@
 body {
     padding: 0;
     margin: 0;
+    min-width: 445px;
 }
 
 a {
@@ -954,9 +955,6 @@ a {
             }
         }
     }
-}
-
-@media screen and (max-width: $s) {
     .arrow-line {
         .wrap {
             font-size: 12px !important;
@@ -968,6 +966,9 @@ a {
             height: 42px !important;
         }
     }
+}
+
+@media screen and (max-width: $s) {
     .org-line .case img {
         width: 150px;
     }
@@ -980,7 +981,7 @@ a {
     }
 }
 
-@media screen and (max-width: $xs) {
+@media screen and (max-width: $s - 120px) {
     .arrow-line {
         .wrap > .title {
             font-size: 10px !important;
@@ -991,6 +992,25 @@ a {
         }
         .wrap > .title:after {
             border-width: 20px !important;
+        }
+        .first-part, .second-part {
+            height: 40px !important;
+        }
+    }
+}
+
+@media screen and (max-width: $xs) {
+	.arrow-line {
+        .wrap > .title {
+            font-size: 10px !important;
+            word-spacing: 0px;
+        }
+        .wrap > .link {
+            padding: 14px 0;
+            margin-left: 12px;
+        }
+        .wrap > .title:after {
+        	border-width: 0 !important;
         }
         .first-part, .second-part {
             height: 40px !important;
