@@ -47,7 +47,8 @@ a {
 
 .top-line {
     background-color: $o;
-    font-family: "h-medium";
+    font-family: $medium;
+    position: relative;
     ul {
         padding: 10px 0;
         display: table;
@@ -59,9 +60,43 @@ a {
             a {
                 color: #FFF;
                 text-transform: uppercase;
-                font-size: 13px;
+                font-size: 15px;
             }
         }
+    }
+}
+.search{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    span{
+        display: block;
+        width: 25px;
+        cursor: pointer;
+        height: 25px;
+        background-image: url(../img/search-icon.png);
+        -webkit-transform: scale(0.6);
+           -moz-transform: scale(0.6);
+            -ms-transform: scale(0.6);
+             -o-transform: scale(0.6);
+                transform: scale(0.6);
+    }
+    input{
+        display: none;
+        position: absolute;
+        right: 0;
+        padding: 8px;
+        font-family: $bf;
+        font-size: 14px;
+        color: $ah;
+        border: 1px solid #ccc;
+        -webkit-border-radius: 5px;
+                border-radius: 5px;
+        -webkit-transition: all 0.3s;
+           -moz-transition: all 0.3s;
+            -ms-transition: all 0.3s;
+             -o-transition: all 0.3s;
+                transition: all 0.3s;
     }
 }
 
@@ -103,7 +138,7 @@ a {
     }
     .wrap {
         position: relative;
-        font-family: "h-roman";
+        font-family: $bf;
         font-size: 22px;
         .title {
             background-color: $g;
@@ -215,7 +250,7 @@ a {
     .wrap {
         padding: 25px 0;
         .case {
-            width: 45%;
+            width: 50%;
             img {
                 float: left;
             }
@@ -224,16 +259,17 @@ a {
                 margin-left: 20px;
                 max-width: 60%;
                 .title {
-                    font-family: h-bold;
+                    font-family: $bold;
+                    font-weight: bold;
                     font-size: 16px;
                     color: $ah;
                 }
                 .descr {
-                    font-family: h-roman;
+                    font-family: $bf;
                     font-size: 14px;
                     color: #FFF;
                     margin-top: 15px;
-                    line-height: 16px;
+                    line-height: 18px;
                 }
             }
             &:nth-child(odd) {
@@ -259,11 +295,13 @@ a {
             text-transform: uppercase;
             color: $o;
             display: block;
-            font-family: h-bold;
+            font-weight: bold;
+            font-family: $bold;
         }
         .title {
             color: $ah;
-            font-family: h-bold;
+            font-weight: bold;
+            font-family: $bold;
             margin-top: 5px;
         }
         .descr {
@@ -504,7 +542,7 @@ a {
 
 // helpers menu line begin
 
-.helpers-menu-line {
+.helpers-menu-line, .helpers-menu-line-adapt {
     width: 100%;
     background-color: $o;
     .wrap {
@@ -527,6 +565,9 @@ a {
             }
         }
     }
+}
+.helpers-menu-line-adapt{
+	display: none;
 }
 
 // helpers menu line end
@@ -602,12 +643,13 @@ a {
                 margin-top: 15px;
                 display: table;
                 width: 100%;
-                font-family: h-medium;
+                font-family: $medium;
                 span {
                     display: table-cell;
                     vertical-align: middle;
                     &:nth-child(2) {
                         padding-left: 15px;
+                        font-weight: 600;
                     }
                 }
                 &:nth-child(1) {
@@ -703,7 +745,7 @@ a {
     .wrap {
         padding-top: 20px;
         .text {
-            font-family: h-roman;
+            font-family: $bf;
             color: #FFF;
             text-align: left;
         }
@@ -729,7 +771,7 @@ a {
             margin: 0 15px 0 15px;
             font-size: 20px;
             font-family: cursive;
-            padding: 0px 11px 1px 11px;
+            padding: 5px 10px;
             &:hover {
                 color: #fff !important;
             }
@@ -753,6 +795,9 @@ a {
     .wrap {
         line-height: 20px;
     }
+}
+.burger{
+	display: none;
 }
 
 .helpers-line-adapt {
@@ -856,9 +901,34 @@ a {
 
 // menu transform 980px
 @media screen and (max-width: $m - 100px) {
+	.orange-line{
+		display: block;
+		padding: 5px;
+		background-color: $o;
+	    .burger{
+	    	width: 25px;
+	    	height: 25px;
+	    	background-image: url(../img/burger.png);
+	    	display: block;
+	    	float: left;
+	    	margin-left: 5px;
+	    	opacity: 0.6;
+	    	cursor: pointer;
+            -webkit-transition: all 0.3s;
+               -moz-transition: all 0.3s;
+                -ms-transition: all 0.3s;
+                 -o-transition: all 0.3s;
+                    transition: all 0.3s;
+	    }
+	}
     .top-line {
         ul {
-            display: block;
+            display: none;
+            -webkit-transition: all 0.4s;
+               -moz-transition: all 0.4s;
+                -ms-transition: all 0.4s;
+                 -o-transition: all 0.4s;
+                    transition: all 0.4s;
             li {
                 display: block;
                 margin-top: 5px;
@@ -866,6 +936,15 @@ a {
                     font-size: 14px;
                 }
             }
+        }
+    }
+    .helpers-menu-line{
+    	display: none;
+    }
+    .helpers-menu-line-adapt {
+    	display: block;
+        li {
+            font-size: 10px !important;
         }
     }
     .contact-line {
@@ -887,7 +966,7 @@ a {
                     margin-top: 15px;
                     display: table;
                     width: 100%;
-                    font-family: h-medium;
+                    font-family: $medium;
                     span {
                         display: table-cell;
                         vertical-align: middle;
@@ -1071,11 +1150,6 @@ a {
             display: none;
         }
     }
-    .helpers-menu-line {
-        li {
-            font-size: 10px !important;
-        }
-    }
 }
 
 //fake
@@ -1084,7 +1158,35 @@ a {
     background-color: #57B4D8;
     width: 100%;
     div {
-        width: 100% px;
-        height: 240px;
+        width: 100%;
+        height: 150px;
     }
 }
+
+.helpers-menu-line, .helpers-menu-line-adapt {
+	a{
+		cursor: pointer;
+	}
+}
+
+// slider settings 
+
+// main slider settings
+
+#main a.bx-next {
+  display: none !important;
+}
+
+.bx-wrapper{
+	position: relative;
+	z-index: 1;
+}
+.slider-arrows{
+	z-index: 2;
+}
+.slider, .comment-line, .news-line, .helpers-line, .helpers-line-adapt{
+	.bx-has-pager{
+		display: none;
+	}
+}
+

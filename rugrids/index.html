@@ -18,6 +18,10 @@
 	<link rel="stylesheet" href="bower_components/normalize.css/normalize.css">
 </head>
 <body>
+	<div class="orange-line">
+		<div class="burger"></div>
+		<div class="clr"></div>
+	</div>
 	<div class="top-line">
 		<div class="wrap">
 			<ul>
@@ -30,6 +34,10 @@
 			</ul>
 		</div>
 	</div>
+	<div class="search">
+		<span></span>
+		<input type="text" name="search" size="40" maxlength="40" placeholder="Я ищу...">
+	</div>
 
 	<div class="logo-line">
 		<div class="wrap">
@@ -38,15 +46,19 @@
 	</div>
 
 	<div class="slider">
+		
 		<div class="slider-arrows">
 			<div class="left">
-				<a class="white" href="#"><</a>
+				<div id="main-slider-prev"></div>
 			</div>
 			<div class="right">
-				<a class="white" href="#">></a>
+				<div id="main-slider-next"></div>
 			</div>
 		</div>
-		<img src="img/1.jpg" alt="" width="100%">
+		<ul id="main" >
+		<li><img src="img/1.jpg" alt="" width="100%"></li>
+		<li><img src="img/1.jpg" alt="" width="100%"></li>
+		</ul>
 	</div>
 
 	<div class="arrow-line">
@@ -85,29 +97,51 @@
 		</div>
 		<div class="slider-arrows">
 			<div class="left">
-				<a href="#"><</a>
+				<div id="comment-slider-prev"></div>
 			</div>
 			<div class="right">
-				<a href="#">></a>
+				<div id="comment-slider-next"></div>
 			</div>
 		</div>
 		<div class="wrap">
-			<div class="case">
-				<a href="#"><img src="img/com_1.jpg" height="180" alt=""></a>
-				<div class="text">
-					<div class="title">Олег Бударгин Генеральный директор ОАО «Россети».</div>
-					<div class="descr">Уважаемые коллеги! Международный электроэнергетический форум «Rugrids–Electro» проходит не первый год, и все это время он растет, набирает обороты, развивается и меняется к лучшему...</div>
-				</div>
-				<div class="clr"></div>
-			</div>
-			<div class="case">
-				<a href="#"><img src="img/com_2.jpg" height="180" alt=""></a>
-				<div class="text">
-					<div class="title">Сергей Катырин,Президент Торгово-промышленной палаты РФ.</div>
-					<div class="descr">Уважаемые участники Форума! Форум «Rugrids–Electro» является крупнейшим конгрессно-выставочным мероприятием, собравшим в рамках своей экспозиции и деловой программы ведущих производителей оборудования и технологий... </div>
-				</div>
-				<div class="clr"></div>
-			</div>
+			<ul id="comment">
+				<li>
+					<div class="case">
+						<a href="#"><img src="img/com_1.jpg" height="180" alt=""></a>
+						<div class="text">
+							<div class="title">Олег Бударгин Генеральный директор ОАО «Россети».</div>
+							<div class="descr">Уважаемые коллеги! Международный электроэнергетический форум «Rugrids–Electro» проходит не первый год, и все это время он растет, набирает обороты, развивается и меняется к лучшему...</div>
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="case">
+						<a href="#"><img src="img/com_2.jpg" height="180" alt=""></a>
+						<div class="text">
+							<div class="title">Сергей Катырин,Президент Торгово-промышленной палаты РФ.</div>
+							<div class="descr">Уважаемые участники Форума! Форум «Rugrids–Electro» является крупнейшим конгрессно-выставочным мероприятием, собравшим в рамках своей экспозиции и деловой программы ведущих производителей оборудования и технологий... </div>
+						</div>
+						<div class="clr"></div>
+					</div>
+				</li>
+				<li>
+					<div class="case">
+						<a href="#"><img src="img/com_2.jpg" height="180" alt=""></a>
+						<div class="text">
+							<div class="title">Сергей Катырин,Президент Торгово-промышленной палаты РФ.</div>
+							<div class="descr">Уважаемые участники Форума! Форум «Rugrids–Electro» является крупнейшим конгрессно-выставочным мероприятием, собравшим в рамках своей экспозиции и деловой программы ведущих производителей оборудования и технологий... </div>
+						</div>
+						<div class="clr"></div>
+					</div>
+					<div class="case">
+						<a href="#"><img src="img/com_1.jpg" height="180" alt=""></a>
+						<div class="text">
+							<div class="title">Олег Бударгин Генеральный директор ОАО «Россети».</div>
+							<div class="descr">Уважаемые коллеги! Международный электроэнергетический форум «Rugrids–Electro» проходит не первый год, и все это время он растет, набирает обороты, развивается и меняется к лучшему...</div>
+						</div>
+						<div class="clr"></div>
+					</div>
+				</li>
+			</ul>
 			<div class="clr"></div>
 		</div>
 	</div>
@@ -116,19 +150,30 @@
 
 		<div class="slider-arrows">
 			<div class="left">
-				<a href="#"><</a>
+				<div id="news-slider-prev"></div>
 			</div>
 			<div class="right">
-				<a href="#">></a>
+				<div id="news-slider-next"></div>
 			</div>
 		</div>
 
 		<div class="wrap">
-			<div class="cat-date">новости электротехники | 5 июня 2015</div>
-			<div class="title">Презентация Международного Электроэнергетического Форума «Rugrids-Electro. Российские сети. Новые возможности» состоится в рамках крупнейшей выставки электротехнической и электроэнергетической индустрии в России и странах СНГ — «ЭЛЕКТРО 2015».</div>
-			<div class="descr">В дни проведения выставки будет организована специальная информационная зона, где пройдет анонсирование тематических выставочных зон Форума. В этом году, помимо традиционных зон (производители оборудования, строительство, инжиниринг, электротехника, международная, инновационные разработки) выставочная площадка Форума пополнится новыми экспозициями — «Подиум инноваций», «Электромобили», «Умный дом», «Малый и средний бизнес», «Зона стартапов» и «Зона регионов».</div>
-			<a href="#" class="more">подробнее</a>
-			<div class="clr"></div>
+			<ul id="news">
+				<li>
+					<div class="cat-date">новости электротехники | 5 июня 2015</div>
+					<div class="title">Презентация Международного Электроэнергетического Форума «Rugrids-Electro. Российские сети. Новые возможности» состоится в рамках крупнейшей выставки электротехнической и электроэнергетической индустрии в России и странах СНГ — «ЭЛЕКТРО 2015».</div>
+					<div class="descr">В дни проведения выставки будет организована специальная информационная зона, где пройдет анонсирование тематических выставочных зон Форума. В этом году, помимо традиционных зон (производители оборудования, строительство, инжиниринг, электротехника, международная, инновационные разработки) выставочная площадка Форума пополнится новыми экспозициями — «Подиум инноваций», «Электромобили», «Умный дом», «Малый и средний бизнес», «Зона стартапов» и «Зона регионов».</div>
+					<a href="#" class="more">подробнее</a>
+					<div class="clr"></div>
+				</li>
+				<li>
+					<div class="cat-date">test</div>
+					<div class="title">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore voluptate, facere aliquid iste odio voluptatibus!</div>
+					<div class="descr">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex eligendi tempore alias, suscipit unde! Incidunt adipisci asperiores suscipit, corrupti fuga? Esse hic laborum odio reiciendis, veritatis, deserunt rerum non pariatur quas dignissimos autem itaque quidem ea earum nulla at necessitatibus corrupti quasi facilis totam, minima iure expedita eum! Dolores eaque quia, explicabo ut, eligendi aspernatur sapiente tempora non corporis aperiam.</div>
+					<a href="#" class="more">подробнее</a>
+					<div class="clr"></div>
+				</li>
+			</ul>
 		</div>
 	</div>
 
@@ -307,29 +352,73 @@
 	<div class="helpers-menu-line">
 		<div class="wrap">
 			<ul>
-				<li class="active"><a href="#">организаторы</a></li>
-				<li><a href="#">при поддержке</a></li>
-				<li><a href="#">партнеры</a></li>
-				<li><a href="#">инфо партнеры</a></li>
+				<li class="active"><a id="org">организаторы</a></li>
+				<li><a id="help">при поддержке</a></li>
+				<li><a id="partn">партнеры</a></li>
+				<li><a id="inf_partn">инфо партнеры</a></li>
 			</ul>
 		</div>
 	</div>
 
 	<div class="helpers-line">
 		<div class="wrap">
-			<div class="in">
-				<div class="case"><img src="img/help_1.png" width="150" alt=""></div>
-				<div class="case"><img src="img/help_2.png" width="150" alt=""></div>
-				<div class="case"><img src="img/help_3.png" width="150" alt=""></div>
-				<div class="case"><img src="img/help_4.png" width="150" alt=""></div>
-				<div class="case"><img src="img/help_5.png" width="150" alt=""></div>
-			</div>
+			<ul id="helpers">
+				<li>
+					<div class="in">
+						<div class="case"><img src="img/help_1.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_2.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_3.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_4.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_5.png" width="150" alt=""></div>
+					</div>
+				</li>
+				<li>
+					<div class="in">
+						<div class="case"><img src="img/help_1.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_2.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_3.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_4.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_5.png" width="150" alt=""></div>
+					</div>
+				</li>
+				<li>
+					<div class="in">
+						<div class="case"><img src="img/help_1.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_2.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_3.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_4.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_5.png" width="150" alt=""></div>
+					</div>
+				</li>
+				<li>
+					<div class="in">
+						<div class="case"><img src="img/help_1.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_2.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_3.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_4.png" width="150" alt=""></div>
+						<div class="case"><img src="img/help_5.png" width="150" alt=""></div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="helpers-menu-line-adapt">
+		<div class="wrap">
+			<ul>
+				<li class="active"><a id="org_ad">организаторы</a></li>
+				<li><a id="help_ad">при поддержке</a></li>
+				<li><a id="partn_ad">партнеры</a></li>
+				<li><a id="inf_partn_ad">инфо партнеры</a></li>
+			</ul>
 		</div>
 	</div>
 
 	<div class="helpers-line-adapt">
 		<div class="wrap">
-			<div class="in">
+			<ul id="helpers-adapt">
+				<li>
+					<div class="in">
 				<div class="line">
 					<div class="case"><img src="img/help_1.png" width="150" alt=""></div>
 				<div class="case"><img src="img/help_2.png" width="150" alt=""></div>
@@ -342,6 +431,53 @@
 					<div class="case"><img src="img/help_5.png" width="150" alt=""></div>
 				</div>
 			</div>
+				</li>
+				<li>
+					<div class="in">
+				<div class="line">
+					<div class="case"><img src="img/help_1.png" width="150" alt=""></div>
+				<div class="case"><img src="img/help_2.png" width="150" alt=""></div>
+				</div>
+				<div class="line">
+					<div class="case"><img src="img/help_3.png" width="150" alt=""></div>
+					<div class="case"><img src="img/help_4.png" width="150" alt=""></div>
+				</div>
+				<div class="line">
+					<div class="case"><img src="img/help_5.png" width="150" alt=""></div>
+				</div>
+			</div>
+				</li>
+				<li>
+					<div class="in">
+				<div class="line">
+					<div class="case"><img src="img/help_1.png" width="150" alt=""></div>
+				<div class="case"><img src="img/help_2.png" width="150" alt=""></div>
+				</div>
+				<div class="line">
+					<div class="case"><img src="img/help_3.png" width="150" alt=""></div>
+					<div class="case"><img src="img/help_4.png" width="150" alt=""></div>
+				</div>
+				<div class="line">
+					<div class="case"><img src="img/help_5.png" width="150" alt=""></div>
+				</div>
+			</div>
+				</li>
+				<li>
+					<div class="in">
+				<div class="line">
+					<div class="case"><img src="img/help_1.png" width="150" alt=""></div>
+				<div class="case"><img src="img/help_2.png" width="150" alt=""></div>
+				</div>
+				<div class="line">
+					<div class="case"><img src="img/help_3.png" width="150" alt=""></div>
+					<div class="case"><img src="img/help_4.png" width="150" alt=""></div>
+				</div>
+				<div class="line">
+					<div class="case"><img src="img/help_5.png" width="150" alt=""></div>
+				</div>
+			</div>
+				</li>
+			</ul>
 		</div>
 	</div>
 
@@ -479,7 +615,7 @@
 
 	<!-- // <script src="js/jq.js"></script> -->
 	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="js/slider.js"></script>
+	<script src="js/jquery.bxslider.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

@@ -1,5 +1,7 @@
 // fonts
 
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600,700,300&subset=latin,cyrillic);
+
 @font-face {
 	font-family: 'h-bold';
 	src: url('../fonts/HelveticaNeueCyr-Bold.eot');
@@ -44,7 +46,12 @@
 
 $o:   #f99d1c;     // orange color
 $g:   #636466;     // base gray color
-$bf:  'h-roman';   // base font
+// $bf:  'h-roman'; 
+$bf: 'Open Sans';  // base font
+
+$bold: 'Open Sans';
+$medium: $bold;
+
 $ah:  #414042;     // base anchor hover color
 $alb: #e0e0e0;     // about line bg color
 
