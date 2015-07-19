@@ -75,7 +75,7 @@ a:hover {
 }
 
 .top-line {
-  background-color: #f49c31;
+  background-color: #ff9933;
   font-family: "Open Sans";
   position: relative;
 }
@@ -161,7 +161,7 @@ a:hover {
   height: 52px;
 }
 .arrow-line .bg .second-part {
-  background-color: #f49c31;
+  background-color: #ff9933;
   width: 89.9%;
   height: 100%;
   float: left;
@@ -198,7 +198,7 @@ a:hover {
   right: -26px;
 }
 .arrow-line .wrap .title .o {
-  color: #f49c31;
+  color: #ff9933;
 }
 .arrow-line .wrap .link {
   float: left;
@@ -233,7 +233,7 @@ a:hover {
 }
 
 .comment-line {
-  background-color: #f49c31;
+  background-color: #ff9933;
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -316,7 +316,7 @@ a:hover {
 }
 .news-line .wrap .cat-date {
   text-transform: uppercase;
-  color: #f49c31;
+  color: #ff9933;
   display: block;
   font-weight: bold;
   font-family: "Open Sans";
@@ -335,7 +335,7 @@ a:hover {
 .news-line .wrap a.more {
   font-family: h-italic;
   text-decoration: underline;
-  color: #f49c31;
+  color: #ff9933;
   margin-top: 10px;
   display: inline-block;
   float: right;
@@ -417,7 +417,7 @@ a:hover {
 .about-line .wrap a.more {
   font-family: h-italic;
   text-decoration: underline;
-  color: #f49c31;
+  color: #ff9933;
   margin-top: 10px;
   display: inline-block;
   float: right;
@@ -542,7 +542,7 @@ a:hover {
 
 .helpers-menu-line, .helpers-menu-line-adapt {
   width: 100%;
-  background-color: #f49c31;
+  background-color: #ff9933;
 }
 .helpers-menu-line .wrap, .helpers-menu-line-adapt .wrap {
   padding: 12px 0 10px 0;
@@ -686,7 +686,7 @@ a:hover {
 }
 
 .footer {
-  border-top: 20px solid #f49c31;
+  border-top: 20px solid #ff9933;
   background-color: #636466;
   height: 150px;
   width: 100%;
@@ -860,7 +860,7 @@ a:hover {
   .orange-line {
     display: block;
     padding: 5px;
-    background-color: #f49c31;
+    background-color: #ff9933;
   }
   .orange-line .burger {
     width: 25px;
@@ -1175,7 +1175,7 @@ a:hover {
   font-weight: 600;
 }
 .contacts ul li .name {
-  color: #f49c31;
+  color: #ff9933;
 }
 .contacts ul li:nth-child(1) {
   margin-top: 0;
@@ -1210,4 +1210,13 @@ a:hover {
 }
 .text .wrap {
   padding: 20px 0;
+}
+
+@media screen and (min-width: 880px) {
+  .contacts .left, .contacts .right {
+    display: block !important;
+  }
+  .contacts .right {
+    margin-top: 10px;
+  }
 }

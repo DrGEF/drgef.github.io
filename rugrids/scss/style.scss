@@ -1294,4 +1294,15 @@ a {
 	}
 }
 
+//adaptive 
+@media screen and (min-width: $s + 160px) {
+	.contacts{
+		.left, .right{
+			display: block !important;
+		}
+		.right{
+			margin-top: 10px;
+		}
+	}
+}
 // contact page end
