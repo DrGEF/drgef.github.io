@@ -110,6 +110,9 @@ a {
 .slider {
     line-height: 0;
     position: relative;
+    .slider-arrows a{
+    	background-image: url(../img/slider-arrows-white.png);
+    }
 }
 
 // arrow-line begin
@@ -145,7 +148,8 @@ a {
             display: inline-block;
             float: left;
             height: 100%;
-            padding: 15px 10px 15px 0;
+            padding: 18px 10px 18px 0;
+            font-size: 16px;
             color: #FFF;
             word-spacing: 5px;
             text-transform: uppercase;
@@ -765,13 +769,10 @@ a {
         display: table-cell;
         width: 50%;
         a {
-            background-color: rgba(0, 0, 0, 0.5);
-            color: rgba(255, 255, 255, 0.75);
-            display: inline;
-            margin: 0 15px 0 15px;
-            font-size: 20px;
-            font-family: cursive;
-            padding: 5px 10px;
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image: url(../img/slider-arrows-black.png);
             &:hover {
                 color: #fff !important;
             }
@@ -783,9 +784,16 @@ a {
     }
     .right {
         text-align: right;
+        a{
+        	background-position-x: 30px;
+        	margin-right: 10px;
+        }
     }
     .left {
         text-align: left;
+        a{
+    		background-position-x: 0;
+		}
     }
 }
 
@@ -824,6 +832,10 @@ a {
         .second-part {
             width: calc(100% - (100% - 1200px)/2) !important;
         }
+        .title{
+        	font-size: 16px;
+        	padding: 16px 10px 16px 0;
+        }
     }
     .left-side, .right-side {
         width: calc((100% - 1200px)/2) !important;
@@ -839,23 +851,16 @@ a {
     }
     .arrow-line {
         .wrap {
-            font-size: 20px !important;
-            .title:after {
-                border-width: 20px !important;
-            }
-        }
-        .first-part, .second-part {
-            height: 50px !important;
-        }
-    }
-    .arrow-line {
-        .wrap {
             .link {
                 margin-left: 40px;
             }
             font-size: 18px;
             .title:after {
                 border-width: 24px !important;
+            }
+            .title{
+            	font-size: 16px;
+            	padding: 16px 10px 16px 0;
             }
         }
         .bg {
@@ -899,7 +904,7 @@ a {
     }
 }
 
-// menu transform 980px
+// menu transform 990px
 @media screen and (max-width: $m - 100px) {
 	.orange-line{
 		display: block;
@@ -1021,14 +1026,26 @@ a {
     .helpers-line {
         display: none;
     }
+    .arrow-line {
+        .title{
+        	font-size: 14px !important;
+        	padding: 17px 10px 17px 0 !important;
+        }
+    }
 }
 
+
+// 880
 @media screen and (max-width: $s + 160px) {
 	.arrow-line {
         .wrap {
             font-size: 12px !important;
             .title:after {
                 border-width: 21px !important;
+            }
+            .title{
+            	font-size: 12px !important;
+            	padding: 15px 10px 15px 0 !important;
             }
         }
         .first-part, .second-part {

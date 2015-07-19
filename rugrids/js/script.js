@@ -8,8 +8,8 @@ var main = function(){
 	  pageSelector: '#main',
 	  nextSelector: '#main-slider-next',
   	  prevSelector: '#main-slider-prev',
-  	  prevText: '<',
-  	  nextText: '>',
+  	  prevText: '',
+  	  nextText: '',
   	  autoHover: true
 	});
 	$('#comment').bxSlider({
@@ -18,8 +18,8 @@ var main = function(){
 	  infiniteLoop: true,
 	  nextSelector: '#comment-slider-next',
   	  prevSelector: '#comment-slider-prev',
-  	  prevText: '<',
-  	  nextText: '>',
+  	  prevText: '',
+  	  nextText: '',
   	  autoHover: true
 	});
 
@@ -28,8 +28,8 @@ var main = function(){
 	  infiniteLoop: true,
 	  nextSelector: '#news-slider-next',
   	  prevSelector: '#news-slider-prev',
-  	  prevText: '<',
-  	  nextText: '>',
+  	  prevText: '',
+  	  nextText: '',
   	  autoHover: true
 	});
 		// helpers automate
@@ -50,6 +50,7 @@ var main = function(){
 
 	var forInterval = function(){
 		var current = slider.getCurrentSlide();
+		var current2 = slider2.getCurrentSlide();
 		reactive();
 		if (current == 0){
 			$('#org').parent('li').addClass('active');
@@ -62,6 +63,18 @@ var main = function(){
 		}
 		if (current == 3){
 			$('#inf_partn').parent('li').addClass('active');
+		}
+		if (current2 == 0){
+			$('#org_ad').parent('li').addClass('active');
+		}
+		if (current2 == 1){
+			$('#help_ad').parent('li').addClass('active');
+		}
+		if (current2 == 2){
+			$('#partn_ad').parent('li').addClass('active');
+		}
+		if (current2 == 3){
+			$('#inf_partn_ad').parent('li').addClass('active');
 		}
 	}
 
