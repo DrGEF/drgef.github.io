@@ -783,7 +783,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (min-width: 1500px) {
+@media (min-width: 1500px) {
   .arrow-line .first-part {
     width: calc((100% - 1200px)/2) !important;
   }
@@ -799,7 +799,7 @@ a:hover {
     width: calc((100% - 1200px)/2) !important;
   }
 }
-@media screen and (max-width: 1090px) {
+@media (max-width: 1090px) {
   .left-side, .right-side {
     display: none;
   }
@@ -837,19 +837,6 @@ a:hover {
     height: 150px;
   }
 
-  .news-line .slider-arrows {
-    top: auto;
-    width: 70px !important;
-    bottom: 20px !important;
-    left: 20px !important;
-  }
-  .news-line .slider-arrows .left {
-    text-align: right !important;
-  }
-  .news-line .slider-arrows .right {
-    text-align: left !important;
-  }
-
   .footer {
     height: 100px;
     font-size: 12px;
@@ -857,7 +844,7 @@ a:hover {
     margin-top: -5px;
   }
 }
-@media screen and (max-width: 990px) {
+@media (max-width: 990px) {
   .orange-line {
     display: block;
     padding: 5px;
@@ -989,7 +976,7 @@ a:hover {
     padding: 17px 10px 17px 0 !important;
   }
 }
-@media screen and (max-width: 880px) {
+@media (max-width: 880px) {
   .arrow-line .wrap {
     font-size: 12px !important;
   }
@@ -1005,7 +992,7 @@ a:hover {
     height: 42px !important;
   }
 }
-@media screen and (max-width: 830px) {
+@media (max-width: 830px) {
   .org-line .case img {
     width: 250px;
   }
@@ -1026,7 +1013,7 @@ a:hover {
     text-align: left;
   }
 }
-@media screen and (max-width: 720px) {
+@media (max-width: 720px) {
   .org-line .case img {
     width: 150px;
   }
@@ -1035,7 +1022,7 @@ a:hover {
     width: 150px;
   }
 }
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .arrow-line .wrap > .title {
     font-size: 10px !important;
   }
@@ -1051,7 +1038,7 @@ a:hover {
     height: 40px !important;
   }
 }
-@media screen and (max-width: 550px) {
+@media (max-width: 550px) {
   .arrow-line .wrap > .title {
     font-size: 10px !important;
     word-spacing: 0px;
@@ -1218,7 +1205,7 @@ a:hover {
   padding: 20px 0;
 }
 
-@media screen and (max-width: 880px) {
+@media (max-width: 880px) {
   .contacts .left, .contacts .right {
     display: block !important;
   }
@@ -1446,7 +1433,7 @@ a:hover {
   cursor: pointer;
 }
 
-@media screen and (max-width: 830px) {
+@media (max-width: 830px) {
   .modal {
     overflow: scroll;
     max-height: 550px;
@@ -1572,7 +1559,7 @@ a:hover {
   color: #ff9933;
 }
 
-@media screen and (max-width: 700px) {
+@media (max-width: 700px) {
   .partn-line .case {
     display: block !important;
     text-align: center !important;
@@ -1757,7 +1744,7 @@ a:hover {
   display: none;
 }
 
-@media screen and (max-width: 720px) {
+@media (max-width: 720px) {
   .case {
     text-align: center;
     display: block !important;
@@ -1953,7 +1940,7 @@ a:hover {
   background-position: 220px 210px;
 }
 
-@media screen and (max-width: 800px) {
+@media (max-width: 800px) {
   .text-prev li span {
     text-align: left;
   }
