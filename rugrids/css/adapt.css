@@ -1,0 +1,66 @@
+/*
+Error: Undefined variable: "$xs".
+        on line 1 of /home/nik/workspace/git/drgef.github.io/rugrids/./scss/adapt.scss
+
+1: @media screen and (max-width: $xs) {
+2: 
+3:     .arrow-line {
+4:         .wrap > .title {
+5:             font-size: 10px !important;
+6:             word-spacing: 0px;
+
+Backtrace:
+/home/nik/workspace/git/drgef.github.io/rugrids/./scss/adapt.scss:1
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/script/tree/variable.rb:49:in `_perform'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/script/tree/node.rb:50:in `perform'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:536:in `block in run_interp_no_strip'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:534:in `map'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:534:in `run_interp_no_strip'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:541:in `run_interp'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:509:in `visit_media'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/stack.rb:79:in `block in with_base'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/stack.rb:115:in `with_frame'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/stack.rb:79:in `with_base'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:158:in `visit'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `map'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/base.rb:36:in `visit'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:157:in `visit'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/root_node.rb:36:in `css_tree'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/tree/root_node.rb:20:in `render'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/engine.rb:278:in `render'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `each'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/sass-3.4.15/lib/sass/plugin/compiler.rb:293:in `watch'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/sass_compiler.rb:46:in `watch!'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/commands/watch_project.rb:41:in `perform'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/commands/base.rb:18:in `execute'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/commands/project_base.rb:19:in `execute'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:43:in `perform!'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/lib/compass/exec/sub_command_ui.rb:15:in `run!'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/bin/compass:30:in `block in <top (required)>'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/bin/compass:44:in `call'
+/home/nik/.rvm/gems/ruby-2.2.1/gems/compass-1.0.3/bin/compass:44:in `<top (required)>'
+/home/nik/.rvm/gems/ruby-2.2.1/bin/compass:23:in `load'
+/home/nik/.rvm/gems/ruby-2.2.1/bin/compass:23:in `<main>'
+/home/nik/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `eval'
+/home/nik/.rvm/gems/ruby-2.2.1/bin/ruby_executable_hooks:15:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined variable: \"$xs\".\A         on line 1 of /home/nik/workspace/git/drgef.github.io/rugrids/./scss/adapt.scss\A \A 1: @media screen and (max-width: $xs) {\A 2: \A 3:     .arrow-line {\A 4:         .wrap > .title {\A 5:             font-size: 10px !important;\A 6:             word-spacing: 0px;"; }
