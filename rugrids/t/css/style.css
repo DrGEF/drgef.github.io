@@ -104,8 +104,8 @@ a:hover {
 .search span {
   display: block;
   width: 25px;
-  cursor: pointer;
   height: 25px;
+  cursor: pointer;
   background-image: url(../img/search-icon.png);
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
@@ -837,6 +837,19 @@ a:hover {
     height: 150px;
   }
 
+  .news-line .slider-arrows {
+    top: auto;
+    width: 70px !important;
+    bottom: 20px !important;
+    left: 20px !important;
+  }
+  .news-line .slider-arrows .left {
+    text-align: right !important;
+  }
+  .news-line .slider-arrows .right {
+    text-align: left !important;
+  }
+
   .footer {
     height: 100px;
     font-size: 12px;
@@ -851,8 +864,8 @@ a:hover {
     background-color: #ff9933;
   }
   .orange-line .burger {
-    width: 25px;
-    height: 25px;
+    width: 100px;
+    height: 100px;
     background-image: url(../img/burger.png);
     display: block;
     float: left;
@@ -864,6 +877,11 @@ a:hover {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+  }
+
+  .search span {
+    width: 100px;
+    height: 100px;
   }
 
   .top-line ul {
@@ -879,7 +897,7 @@ a:hover {
     margin-top: 5px;
   }
   .top-line ul li a {
-    font-size: 14px;
+    font-size: 44px;
   }
 
   .helpers-menu-line {
@@ -972,8 +990,19 @@ a:hover {
   }
 
   .arrow-line .title {
-    font-size: 14px !important;
-    padding: 17px 10px 17px 0 !important;
+    font-size: 44px !important;
+    padding: 20px 10px 20px 0 !important;
+    max-width: 50%;
+    text-align: center;
+  }
+  .arrow-line .link {
+    font-size: 44px;
+    text-align: center;
+    max-width: 50%;
+    padding: 66px 0;
+  }
+  .arrow-line .bg {
+    height: 172px;
   }
 }
 @media screen and (max-width: 880px) {
@@ -1330,6 +1359,31 @@ a:hover {
 .people-line .wrap .people ul li img, .people-line .wrap .people ul li .first-name, .people-line .wrap .people ul li .middle-name, .people-line .wrap .people ul li .work_at {
   display: block;
 }
+.people-line .wrap .people ul li span {
+  cursor: pointer;
+}
+.people-line .wrap .people ul li a div span {
+  display: none;
+}
+.people-line .wrap .people ul li a:hover div {
+  cursor: pointer;
+  position: relative;
+}
+.people-line .wrap .people ul li a:hover div span {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  color: #ff9933;
+  display: block;
+  text-transform: uppercase;
+}
+.people-line .wrap .people ul li a:hover div div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(246, 246, 246, 0.85);
+}
 .people-line .wrap .people ul li img {
   max-width: 120px;
 }
@@ -1405,6 +1459,7 @@ a:hover {
   width: 50px;
   height: 50px;
   background-image: url(../img/close.jpg);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 830px) {
@@ -2081,4 +2136,8 @@ a:hover {
   font-size: 20px;
   text-transform: uppercase;
   color: #414042;
+}
+
+.slider, .arrow-line, .org-line, .comment-line, .news-line, .arrow-line, .info-graph, .info-graph-adapt, .about-line, .zones, .helpers-menu-line, .helpers-line, .helpers-menu-line-adapt, .helpers-line-adapt, .banner-line, .contact-line, .contact-line-adapt, .footer {
+  display: none;
 }

@@ -104,8 +104,8 @@ a:hover {
 .search span {
   display: block;
   width: 25px;
-  cursor: pointer;
   height: 25px;
+  cursor: pointer;
   background-image: url(../img/search-icon.png);
   -webkit-transform: scale(0.6);
   -moz-transform: scale(0.6);
@@ -864,8 +864,8 @@ a:hover {
     background-color: #ff9933;
   }
   .orange-line .burger {
-    width: 25px;
-    height: 25px;
+    width: 100px;
+    height: 100px;
     background-image: url(../img/burger.png);
     display: block;
     float: left;
@@ -877,6 +877,11 @@ a:hover {
     -ms-transition: all 0.3s;
     -o-transition: all 0.3s;
     transition: all 0.3s;
+  }
+
+  .search span {
+    width: 100px;
+    height: 100px;
   }
 
   .top-line ul {
@@ -892,7 +897,7 @@ a:hover {
     margin-top: 5px;
   }
   .top-line ul li a {
-    font-size: 14px;
+    font-size: 44px;
   }
 
   .helpers-menu-line {
@@ -985,8 +990,19 @@ a:hover {
   }
 
   .arrow-line .title {
-    font-size: 14px !important;
-    padding: 17px 10px 17px 0 !important;
+    font-size: 44px !important;
+    padding: 20px 10px 20px 0 !important;
+    max-width: 50%;
+    text-align: center;
+  }
+  .arrow-line .link {
+    font-size: 44px;
+    text-align: center;
+    max-width: 50%;
+    padding: 66px 0;
+  }
+  .arrow-line .bg {
+    height: 172px;
   }
 }
 @media screen and (max-width: 880px) {
