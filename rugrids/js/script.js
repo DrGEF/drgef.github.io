@@ -174,16 +174,10 @@ var main = function(){
 
 	$('.search span').click(function() {
 		if (searchexpand) {
-			$('.search input').css({
-				top: 0,
-				display: 'none'
-			});
+			$('.search input').fadeOut('fast');
 			searchexpand = false;
 		}else{
-			$('.search input').css({
-				top: '60px',
-				display: 'block'
-			});
+			$('.search input').fadeIn('fast');
 			searchexpand = true;
 		}
 	});
@@ -343,5 +337,13 @@ var main = function(){
 }
 
 $(document).ready(function() {
+	$("body").queryLoader2({
+        barColor: "#fff",
+        backgroundColor: "#ff9933",
+        percentage: true,
+        barHeight: 1,
+        completeAnimation: "grow",
+        minimumTime: 500
+    });
 	main();
 });
