@@ -990,11 +990,11 @@ a:hover {
   }
 
   .top-arrow-line .first-part, .top-arrow-line .second-part {
-    height: 172px !important;
+    height: 134px !important;
   }
   .top-arrow-line .title {
-    font-size: 44px !important;
-    padding: 20px 10px 20px 0 !important;
+    font-size: 00px !important;
+    padding: 22px 10px 22px 0 !important;
     max-width: 50% !important;
     text-align: center !important;
   }
@@ -1005,7 +1005,7 @@ a:hover {
     font-size: 40px !important;
     text-align: center !important;
     max-width: 50% !important;
-    padding: 60px 0 !important;
+    padding: 47px 0 !important;
   }
   .top-arrow-line .bg {
     height: 160px !important;
@@ -1043,8 +1043,7 @@ a:hover {
     font-size: 40px !important;
   }
   .arrow-line .title:after {
-    border-width: 36px !important;
-    right: -35px !important;
+    display: none;
   }
   .arrow-line .link {
     font-size: 26px  !important;
