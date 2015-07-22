@@ -1032,22 +1032,48 @@ a {
     .helpers-line {
         display: none;
     }
-    .arrow-line {
+    .top-arrow-line {
+        .first-part, .second-part{
+            height: 172px;
+        }
         .title{
         	font-size: 44px !important;
         	padding: 20px 10px 20px 0 !important;
         	max-width: 50%;
         	text-align: center;
+            &:after{
+                display: none;
+            }
         }
         .link{
         	font-size: 44px;
         	text-align: center;
         	max-width: 50%;
-        	padding: 66px 0;
+        	padding: 66px 0 !important;
         }
         .bg{
         	height: 172px;
         }
+    }
+    .comment-line {
+        .wrap {
+            text-align: center;
+            width: 100%;
+        }
+        .case {
+            float: none !important;
+            display: inline-block;
+            width: 400px !important;
+            &:nth-child(even) {
+                margin-top: 35px;
+            }
+            .text {
+                text-align: left;
+            }
+        }
+    }
+    .news-line .wrap a.more{
+        font-size: 30px !important;
     }
 }
 
@@ -1082,23 +1108,6 @@ a {
 
     .org-line .case img {
         width: 250px;
-    }
-    .comment-line {
-        .wrap {
-            text-align: center;
-            width: 100%;
-        }
-        .case {
-            float: none !important;
-            display: inline-block;
-            width: 400px !important;
-            &:nth-child(even) {
-                margin-top: 35px;
-            }
-            .text {
-                text-align: left;
-            }
-        }
     }
 }
 
