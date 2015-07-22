@@ -340,6 +340,11 @@ var main = function(){
 
 	// vistavka end
 
+	// style adapt
+	var toparrowline = $('.top-arrow-line .in').height();
+	$('.top-arrow-line .first-part').height(toparrowline);
+	$('.top-arrow-line .second-part').height(toparrowline);
+
 }
 
 $(document).ready(function() {

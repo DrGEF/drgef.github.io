@@ -837,19 +837,6 @@ a:hover {
     height: 150px;
   }
 
-  .news-line .slider-arrows {
-    top: auto;
-    width: 70px !important;
-    bottom: 20px !important;
-    left: 20px !important;
-  }
-  .news-line .slider-arrows .left {
-    text-align: right !important;
-  }
-  .news-line .slider-arrows .right {
-    text-align: left !important;
-  }
-
   .footer {
     height: 100px;
     font-size: 12px;
@@ -989,23 +976,33 @@ a:hover {
     display: none;
   }
 
-  .top-arrow-line .first-part, .top-arrow-line .second-part {
-    height: 134px !important;
+  .top-arrow-line {
+    position: relative;
+  }
+  .top-arrow-line .in {
+    width: 100%;
+    display: table;
   }
   .top-arrow-line .title {
     font-size: 30px !important;
-    padding: 22px 10px 22px 0 !important;
-    max-width: 50% !important;
+    padding: 10px 0 !important;
+    width: 50% !important;
     text-align: center !important;
+    vertical-align: middle;
+    display: table-cell !important;
+    float: none !important;
   }
   .top-arrow-line .title:after {
     display: none !important;
   }
   .top-arrow-line .link {
-    font-size: 40px !important;
+    float: none !important;
+    display: table-cell !important;
+    font-size: 30px !important;
     text-align: center !important;
-    max-width: 50% !important;
-    padding: 47px 0 !important;
+    width: 50% !important;
+    padding: 0 !important;
+    vertical-align: middle;
   }
   .top-arrow-line .bg {
     height: 160px !important;
@@ -1047,6 +1044,7 @@ a:hover {
   }
   .arrow-line .link {
     font-size: 26px  !important;
+    padding: 23px 0 !important;
   }
 
   .helpers-menu-line-adapt li {
@@ -1061,22 +1059,6 @@ a:hover {
   }
   .contact-line-adapt img {
     max-width: 550px !important;
-  }
-}
-@media screen and (max-width: 880px) {
-  .arrow-line .wrap {
-    font-size: 12px !important;
-  }
-  .arrow-line .wrap .title:after {
-    border-width: 21px !important;
-    right: -21px;
-  }
-  .arrow-line .wrap .title {
-    font-size: 12px !important;
-    padding: 15px 10px 15px 0 !important;
-  }
-  .arrow-line .first-part, .arrow-line .second-part {
-    height: 42px !important;
   }
 }
 @media screen and (max-width: 830px) {
