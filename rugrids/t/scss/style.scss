@@ -118,7 +118,7 @@ a {
 
 // arrow-line begin
 
-.arrow-line {
+.arrow-line, .top-arrow-line {
     position: relative;
     .bg {
         position: absolute;
@@ -1033,7 +1033,6 @@ a {
         display: none;
     }
     .top-arrow-line {
-        @extend .arrow-line;
         .first-part, .second-part{
             height: 172px !important;
         }
