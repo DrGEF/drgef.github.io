@@ -2305,6 +2305,12 @@ a {
 
 //disable
 
-.slider, .arrow-line, .org-line, .comment-line, .news-line, .arrow-line, .info-graph, .info-graph-adapt, .about-line, .zones, .helpers-menu-line, .helpers-line, .helpers-menu-line-adapt, .helpers-line-adapt, .banner-line, .contact-line, .contact-line-adapt, .footer{
+.logo-line, .slider, .arrow-line, .org-line,
+.comment-line, .news-line, .arrow-line,
+.info-graph, .info-graph-adapt, .about-line,
+.zones, .helpers-menu-line, .helpers-line,
+.helpers-menu-line-adapt, .helpers-line-adapt,
+.banner-line, .contact-line, .contact-line-adapt,
+.footer{
     display: none;
 }
