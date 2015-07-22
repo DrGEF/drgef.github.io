@@ -1018,17 +1018,54 @@ a:hover {
   .comment-line .case {
     float: none !important;
     display: inline-block;
-    width: 400px !important;
+    width: 800px !important;
   }
   .comment-line .case:nth-child(even) {
     margin-top: 35px;
   }
+  .comment-line .case a img {
+    width: 180px;
+    height: auto;
+  }
   .comment-line .case .text {
     text-align: left;
+    max-width: 70%;
   }
 
-  .news-line .wrap a.more {
+  a.more {
     font-size: 30px !important;
+  }
+
+  .arrow-line .first-part, .arrow-line .second-part {
+    height: 62px;
+  }
+  .arrow-line .title {
+    font-size: 40px;
+  }
+  .arrow-line .title:after {
+    border-width: 31px !important;
+    right: -30px;
+  }
+  .arrow-line .link {
+    font-size: 26px;
+  }
+
+  .zones .photo-place {
+    display: none;
+  }
+
+  .helpers-menu-line-adapt li {
+    font-size: 22px !important;
+  }
+
+  .contact-line-adapt .wrap {
+    padding: 60px 0;
+  }
+  .contact-line-adapt ul {
+    font-size: 30px;
+  }
+  .contact-line-adapt img {
+    max-width: 550px;
   }
 }
 @media screen and (max-width: 880px) {
